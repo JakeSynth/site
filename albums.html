@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="scripts/lightbox.min.css" rel="stylesheet" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+.column2 {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 0px;
+}
+.content2 {
+  padding: 8px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  .column2 {
+    width: 50%;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .hide {
+    display: none;
+  }
+}
+a {
+  font-weight: bold;
+  
+}
+.header {
+  color: black;
+  text-decoration: none;
+  padding-bottom: -5px;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<h1>JAKESYNTH</h1>
+<h2 style="margin-top: -20px;">Jacob Heath - Graphic Designer</h2>
+<a href="https://www.twitter.com/jakesynth"><img src="images/twitter.svg" style="width:50px;"></a>
+<a href="https://www.instagram.com/jakesynth"><img src="images/instagram.svg" style="width:60px; padding-left: 15px;"></a>
+  <a href="site.html" target="_blank" class="header" style="display:inline-flex;position: absolute; left: 74%;">
+  <table><tr><th><span class="material-icons">west</span></th><th><h3 class="hide">Go Back</h3></th></tr></table></a>
+<hr>
+
+<h2>ALBUM COVERS</h2>
+<p>This project was undertaken to strengthen my photoshop skills and see if I could mimic an album cover style.<br>You can see more on my <a href="https://www.instagram.com/jakesynth">Instagram</a>.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+<a href="images/FA.png" data-lightbox="image-1"><img src="images/FA.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/gbr.png" data-lightbox="image-2"><img src="images/gbr.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/un.png" data-lightbox="image-3"><img src="images/un.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/NaturalHazards.png" data-lightbox="image-4"><img src="images/NaturalHazards.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+<a href="images/Meditation.png" data-lightbox="image-5"><img src="images/Meditation.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/echo.png" data-lightbox="image-6"><img src="images/echo.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/tf.png" data-lightbox="image-7"><img src="images/tf.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/Broken.jpg" data-lightbox="image-8"><img src="images/Broken.jpg" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+<div class="row">
+  <div class="column2">
+    <div class="content2">
+<a href="images/dawn1.png" data-lightbox="image-9"><img src="images/dawn1.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column2">
+    <div class="content2">
+<a href="images/day2.png" data-lightbox="image-10"><img src="images/day2.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column2">
+    <div class="content2">
+<a href="images/dusk3.png" data-lightbox="image-11"><img src="images/dusk3.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+<script src="scripts/lightbox-plus-jquery.js"></script>
+</html>

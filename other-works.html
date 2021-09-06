@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="scripts/lightbox.min.css" rel="stylesheet" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+a {
+  font-weight: bold;
+  
+}
+.header {
+  color: black;
+  text-decoration: none;
+  padding-bottom: -5px;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<h1>JAKESYNTH</h1>
+<h2 style="margin-top: -20px;">Jacob Heath - Graphic Designer</h2>
+<a href="https://www.twitter.com/jakesynth"><img src="images/twitter.svg" style="width:50px;"></a>
+<a href="https://www.instagram.com/jakesynth"><img src="images/instagram.svg" style="width:60px; padding-left: 15px;"></a>
+<hr>
+
+<h2>PROJECTS</h2>
+<p>Below is a selection of projects I&#39;ve made. To see much more check out my <a href="https://www.instagram.com/jakesynth">Instagram</a> where I update about new projects and designs all the time.</p>
+
+
+<div class="content">
+  <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/paranai.png" alt="Paranai" style="width:100%">
+  <table><tr><th><h3>The Paranai Project</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
+  <p>Currently in development, I have created an interractive fantasy map for Dungeons & Dragons including expansive lore, almost 200 unique towns, 130+ Places of Interest, 13 Exclusive Races, and much, much more.</p>
+  <p>Using a collection of techniques, this project showcases my strengths in HTML, CSS, JS, Photoshop, Illustrator, and Creativity.</p>
+</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+  <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/headsup2.png" alt="Logo Design" style="width:100%">
+      <table><tr><th><h3>Logo Design</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/highspirits.png" alt="Product Design" style="width:100%">
+      <table><tr><th><h3>Product Design</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/other.png" alt="Other Designs" style="width:100%">
+      <table><tr><th><h3>Other Designs</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/FA.png" alt="Album Covers" style="width:100%">
+      <table><tr><th><h3>Album Covers</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+<a href="images/FA.png" data-lightbox="image-1"><img src="images/FA.png" alt="Album Covers" style="width:100%"></a>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+<script src="scripts/lightbox-plus-jquery.js"></script>
+</html>

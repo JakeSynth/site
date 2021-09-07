@@ -27,13 +27,20 @@ h1 {
 }
 
 .row {
-  margin: 8px -16px;
+  margin: 0px -16px;
 }
 
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.row > .column2 {
+  padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -43,7 +50,7 @@ h1 {
 }
 .column2 {
   float: left;
-  width: 33%;
+    width: calc(100% / 3);
 }
 
 /* Clear floats after rows */ 
@@ -58,7 +65,7 @@ h1 {
   padding: 0px;
 }
 .content2 {
-  padding: 8px;
+  padding: 0px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -103,76 +110,80 @@ a {
 <div class="main">
 <h1>JAKESYNTH</h1>
 <h2 style="margin-top: -20px;">Jacob Heath - Graphic Designer</h2>
-<a href="https://www.twitter.com/jakesynth"><img src="images/twitter.svg" style="width:50px;"></a>
-<a href="https://www.instagram.com/jakesynth"><img src="images/instagram.svg" style="width:60px; padding-left: 15px;"></a>
-  <a href="site.html" target="_blank" class="header" style="display:inline-flex;position: absolute; left: 74%;">
+<p style="font-weight: bold; margin-top: -10px;">contactjakesynth@gmail.com</p>
+<a href="https://www.twitter.com/jakesynth"><img src="images/landing/twitter.svg" style="width:50px;"></a>
+<a href="https://www.instagram.com/jakesynth"><img src="images/landing/instagram.svg" style="width:60px; padding-left: 15px;"></a>
+  <a href="index.html" class="header" style="display:fixed; position: absolute; right: 5%; top:5%;">
   <table><tr><th><span class="material-icons">west</span></th><th><h3 class="hide">Go Back</h3></th></tr></table></a>
 <hr>
 
 <h2>ALBUM COVERS</h2>
-<p>This project was undertaken to strengthen my photoshop skills and see if I could mimic an album cover style.<br>You can see more on my <a href="https://www.instagram.com/jakesynth">Instagram</a>.</p>
+<p>This project was undertaken to strengthen my <b>Photoshop</b> skills and see if I could mimic an album cover style.<br>You can see more on my <a href="https://www.instagram.com/jakesynth">Instagram</a>.</p>
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
   <div class="column">
     <div class="content">
-<a href="images/FA.png" data-lightbox="image-1"><img src="images/FA.png" alt="AID" style="width:100%"></a>
+<a href="images/landing/FA.png" data-lightbox="image-1"><img src="images/landing/FAthumb.png" alt="AID" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-<a href="images/gbr.png" data-lightbox="image-2"><img src="images/gbr.png" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/gbr.png" data-lightbox="image-2"><img src="images/albums/gbrthumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-<a href="images/un.png" data-lightbox="image-3"><img src="images/un.png" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/un.png" data-lightbox="image-3"><img src="images/albums/unthumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-<a href="images/NaturalHazards.png" data-lightbox="image-4"><img src="images/NaturalHazards.png" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/NaturalHazards.png" data-lightbox="image-4"><img src="images/albums/NaturalHazardsthumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
+</div>
 <div class="row">
   <div class="column">
     <div class="content">
-<a href="images/Meditation.png" data-lightbox="image-5"><img src="images/Meditation.png" alt="AID" style="width:100%"></a>
+<a href="images/albums/Meditation.png" data-lightbox="image-5"><img src="images/albums/Meditationthumb.png" alt="AID" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-<a href="images/echo.png" data-lightbox="image-6"><img src="images/echo.png" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/echo.png" data-lightbox="image-6"><img src="images/albums/echothumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-<a href="images/tf.png" data-lightbox="image-7"><img src="images/tf.png" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/tf.png" data-lightbox="image-7"><img src="images/albums/tfthumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-<a href="images/Broken.jpg" data-lightbox="image-8"><img src="images/Broken.jpg" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/Broken.jpg" data-lightbox="image-8"><img src="images/albums/Brokenthumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
+</div>
 <div class="row">
   <div class="column2">
     <div class="content2">
-<a href="images/dawn1.png" data-lightbox="image-9"><img src="images/dawn1.png" alt="AID" style="width:100%"></a>
+<a href="images/albums/dawn1.png" data-lightbox="image-9"><img src="images/albums/dawn1thumb.png" alt="AID" style="width:100%"></a>
     </div>
   </div>
   <div class="column2">
     <div class="content2">
-<a href="images/day2.png" data-lightbox="image-10"><img src="images/day2.png" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/day2.png" data-lightbox="image-10"><img src="images/albums/day2thumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
   <div class="column2">
     <div class="content2">
-<a href="images/dusk3.png" data-lightbox="image-11"><img src="images/dusk3.png" alt="Album Covers" style="width:100%"></a>
+<a href="images/albums/dusk3.png" data-lightbox="image-11"><img src="images/albums/dusk3thumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
 <!-- END GRID -->
 </div>
+<a href="https://www.instagram.com/jakesynth" style="font-size: 2vw; color: black;">See more here!</a>
 
 <!-- END MAIN -->
 </div>

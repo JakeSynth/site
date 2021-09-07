@@ -27,19 +27,30 @@ h1 {
 }
 
 .row {
-  margin: 8px -16px;
+  margin: 0px -16px;
 }
 
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
   padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.row > .column2 {
+  padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
+}
+.column2 {
+  float: left;
+    width: calc(100% / 3);
 }
 
 /* Clear floats after rows */ 
@@ -51,8 +62,10 @@ h1 {
 
 /* Content */
 .content {
-  background-color: white;
-  padding: 10px;
+  padding: 0px;
+}
+.content2 {
+  padding: 0px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -60,12 +73,24 @@ h1 {
   .column {
     width: 50%;
   }
+  .column2 {
+    width: 50%;
+  }
+  .hide {
+    display: none;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .hide {
+    display: none;
   }
 }
 a {
@@ -85,51 +110,123 @@ a {
 <div class="main">
 <h1>JAKESYNTH</h1>
 <h2 style="margin-top: -20px;">Jacob Heath - Graphic Designer</h2>
-<a href="https://www.twitter.com/jakesynth"><img src="images/twitter.svg" style="width:50px;"></a>
-<a href="https://www.instagram.com/jakesynth"><img src="images/instagram.svg" style="width:60px; padding-left: 15px;"></a>
+<p style="font-weight: bold; margin-top: -10px;">contactjakesynth@gmail.com</p>
+<a href="https://www.twitter.com/jakesynth"><img src="images/landing/twitter.svg" style="width:50px;"></a>
+<a href="https://www.instagram.com/jakesynth"><img src="images/landing/instagram.svg" style="width:60px; padding-left: 15px;"></a>
+  <a href="index.html" class="header" style="display:fixed; position: absolute; right: 5%; top:5%;">
+  <table><tr><th><span class="material-icons">west</span></th><th><h3 class="hide">Go Back</h3></th></tr></table></a>
 <hr>
 
-<h2>PROJECTS</h2>
-<p>Below is a selection of projects I&#39;ve made. To see much more check out my <a href="https://www.instagram.com/jakesynth">Instagram</a> where I update about new projects and designs all the time.</p>
+<h2>LOGO DESIGN</h2>
+<p>One of my favourite passtimes; I spend a lot of time making logos and trying to match the feeling the company would evoke with the style.<br>I use mainly <b>Illustrator</b> for these but <b>Photoshop</b> skills come in handy from time to time.<br><br>You can see more on my <a href="https://www.instagram.com/jakesynth">Instagram</a>.</p>
 
-
-<div class="content">
-  <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/paranai.png" alt="Paranai" style="width:100%">
-  <table><tr><th><h3>The Paranai Project</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
-  <p>Currently in development, I have created an interractive fantasy map for Dungeons & Dragons including expansive lore, almost 200 unique towns, 130+ Places of Interest, 13 Exclusive Races, and much, much more.</p>
-  <p>Using a collection of techniques, this project showcases my strengths in HTML, CSS, JS, Photoshop, Illustrator, and Creativity.</p>
-</div>
 <!-- Portfolio Gallery Grid -->
 <div class="row">
   <div class="column">
     <div class="content">
-  <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/headsup2.png" alt="Logo Design" style="width:100%">
-      <table><tr><th><h3>Logo Design</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<a href="images/landing/headsup2.png" data-lightbox="image-1"><img src="images/landing/headsup2thumb.png" alt="AID" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/highspirits.png" alt="Product Design" style="width:100%">
-      <table><tr><th><h3>Product Design</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<a href="images/logos/12.png" data-lightbox="image-2"><img src="images/logos/12thumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/other.png" alt="Other Designs" style="width:100%">
-      <table><tr><th><h3>Other Designs</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<a href="images/logos/a.png" data-lightbox="image-3"><img src="images/logos/athumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <a href="https://www.paranai.co.uk" target="_blank" class="header"><img src="images/FA.png" alt="Album Covers" style="width:100%">
-      <table><tr><th><h3>Album Covers</h3></th><th><span class="material-icons">east</span></th></tr></table></a>
-      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+<a href="images/logos/bigweenie.png" data-lightbox="image-4"><img src="images/logos/bigweeniethumb.png" alt="Album Covers" style="width:100%"></a>
     </div>
   </div>
-<a href="images/FA.png" data-lightbox="image-1"><img src="images/FA.png" alt="Album Covers" style="width:100%"></a>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+<a href="images/logos/camo.png" data-lightbox="image-5"><img src="images/logos/camothumb.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/dgs.png" data-lightbox="image-6"><img src="images/logos/dgsthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/dev.png" data-lightbox="image-7"><img src="images/logos/devthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/fin.png" data-lightbox="image-8"><img src="images/logos/finthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column2">
+    <div class="content2">
+<a href="images/logos/stellar.png" data-lightbox="image-9"><img src="images/logos/stellarthumb.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column2">
+    <div class="content2">
+<a href="images/logos/runic.png" data-lightbox="image-10"><img src="images/logos/runicthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column2">
+    <div class="content2">
+<a href="images/logos/blood.png" data-lightbox="image-11"><img src="images/logos/bloodthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+<a href="images/logos/nest.png" data-lightbox="image-12"><img src="images/logos/nestthumb.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/koo.png" data-lightbox="image-13"><img src="images/logos/koothumb.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/gl.png" data-lightbox="image-14"><img src="images/logos/glthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/jfc.png" data-lightbox="image-15"><img src="images/logos/jfcthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+<a href="images/logos/see.png" data-lightbox="image-16"><img src="images/logos/seethumb.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/oak.png" data-lightbox="image-17"><img src="images/logos/oakthumb.png" alt="AID" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/qu.png" data-lightbox="image-18"><img src="images/logos/quthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+<a href="images/logos/pet.png" data-lightbox="image-19"><img src="images/logos/petthumb.png" alt="Album Covers" style="width:100%"></a>
+    </div>
+  </div>
+</div>
+<a href="https://www.instagram.com/jakesynth" style="font-size: 2vw; color: black;">See more here!</a>
 <!-- END GRID -->
 </div>
 
